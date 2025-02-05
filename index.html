@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Accesorios</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8d7da; /* Fondo rosado pastel */
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #ff6b81;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 2em;
+    }
+    .container {
+      padding: 20px;
+    }
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .producto {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .producto img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    footer {
+      background-color: #ff6b81;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+    .formulario {
+      margin-top: 40px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #ff6b81;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #e35b6a;
+    }
+  </style>
+</head>
+<body>
+  <header>Tienda de Accesorios</header>
+  <div class="container">
+    <h2>Nuestros Productos</h2>
+    <div class="productos">
+      <div class="producto">
+        <img src="https://via.placeholder.com/200" alt="Libreta">
+        <h3>Libreta</h3>
+        <p>Libretas decorativas y funcionales.</p>
+      </div>
+      <div class="producto">
+        <img src="https://via.placeholder.com/200" alt="Pegatinas">
+        <h3>Pegatinas</h3>
+        <p>Pegatinas coloridas para decorar.</p>
+      </div>
+      <div class="producto">
+        <img src="https://via.placeholder.com/200" alt="Tijeras">
+        <h3>Tijeras</h3>
+        <p>Tijeras de diferentes estilos.</p>
+      </div>
+      <div class="producto">
+        <img src="https://via.placeholder.com/200" alt="Lápices de colores">
+        <h3>Lápices de colores</h3>
+        <p>Variedad de lápices para tus proyectos.</p>
+      </div>
+    </div>
+
+    <div class="formulario">
+      <h2>Contáctanos</h2>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+  <footer>
+    &copy; 2025 Tienda de Accesorios. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
